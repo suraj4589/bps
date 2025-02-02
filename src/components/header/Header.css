@@ -1,62 +1,170 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: serif;
-}
 
 #Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  text-align: center;
 }
+
 
 .college-name {
   display: flex;
   margin-left: 20px;
   color: #4da1fb;
+  font-size: 1rem; 
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-login {
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  margin-bottom: 12px;
+  flex-wrap: wrap; 
+  text-align: center;
 }
 
 .search-form {
   display: flex;
-  margin-right: 20px;
-
+  text-align: center;
 }
 
 .search-input {
-  padding: 5px;
-  margin-right: 5px;
-  border-radius: 10px;
-
+  width: 200px; 
 }
 
 .search-button {
-  padding: 6px 10px;
+  padding: 3px 5px;
   background-color: #28a745;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 10px;
 }
+.btn{
+  padding: 6px 10px;
+  cursor: pointer;
+}
 
 .dropdown-h {
   margin-top: 20px;
   margin-right: 10px;
+  
 }
 
-/*  project name */
+
 .name {
   text-align: center;
-  
   padding: 10px;
   background: linear-gradient(to right, #54abf8, #00f2fe);
   border-radius: 20px;
   color: #480ced;
+  font-size: 1.5rem; /
+}
+
+
+@media (max-width: 780px) {
+  #Header {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .college-name {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+
+  .search-login {
+    margin-left: 0;
+    flex-direction: inline; 
+   font-size: 1rem;
+   align-items: center;
+    text-align: center;
+  }
+
+  .search-form {
+    margin: 0px ;
+    justify-content: center;
+    padding: 0px;
+    
+  }
+
+  .search-input {
+    width: 100%; 
+
+  }
+
+  .search-button {
+    width: 50%;
+  }
+  .btn{
+    text-align: center;
+   margin-top: 20px;
+   font-size: 1rem;
+  }
+
+  .dropdown-h {
+    margin: 10px 0;
+  }
+  .dropdown-item:hover{
+    background-color: azure;
+  }
+
+  .name {
+    font-size: 1.7rem;
+    padding: 8px;
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+ 
+  .college-name{
+    font-size: 12px;
+    margin: 2px;
+    padding: 0px;
+  }
+  .search-login{
+    display: inline-flex;
+    font-size:10px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .search-form {
+    margin: 5px ;
+    width: 70%; 
+   align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+ .btn{
+  margin-top: 10px;
+  font-size: 13px;
+ }
+
+  .search-button {
+    display: none; 
+    
+  }
+  
+  .name {
+    margin: 0px;
+    padding: 5px;
+  }
+  .project{
+    font-size: 12px;
+   line-height: 10px;
+   
+  }
 }

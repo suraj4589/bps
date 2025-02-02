@@ -3,16 +3,20 @@
     border-radius: 15px;
     background: #88c2fc;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 2px;
   }
 
-  .nav-link {
+ ul ,li{
     color: #007bff !important;
+    
   }
-  
+  .nav-link {
+    text-align: center;
+    
+  }
   .nav-link:hover {
     color: #000509 !important;
     background-color: #55a9fc;
-    border-radius: 50px;
-    
+    border-radius: 50px; 
+    z-index: -1;
   }

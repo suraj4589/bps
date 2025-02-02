@@ -30,6 +30,7 @@ const Userlogin = () => {
               onChange={(e) => setUsername(e.target.value)}
               required
               placeholder="Enter username"
+              autoComplete='username'
             />
           </div>
           <div className="form-group">
@@ -43,13 +44,14 @@ const Userlogin = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
               placeholder="Enter password"
+              autoComplete='password'
             />
           </div>
           <button type="submit" className="btn btn-primary btn-block">Login</button>
         </form>
         <div className="login-links">
           <p><a href="#">Forgot Password?</a></p>
-          <p><a href="#">New User? Sign Up</a></p>
+          <p><a href="/signup">New User? Sign Up</a></p>
         </div>
       </div>
     </div>

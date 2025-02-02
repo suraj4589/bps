@@ -9,19 +9,16 @@ import Userlogin from './components/login/user/Userlogin';
 import Empylogin from './components/login/employee/Empylogin';
 import Busilogin from './components/login/business/MsmeLogin.jsx';
 import Contact from './pages/contact/Contact';
-import UserProfile from './components/UserProfile';
+import UserProfile from './components/UserProfile/UserProfile';
 
 function App() {
-  // Custom component to manage layout and navigation
   const Layout = () => {
     const location = useLocation();
 
-    // Paths where Navbar should be hidden
     const hideNavbarPaths = ['/user-profile'];
 
     return (
       <div>
-        {/* Conditionally render Navbar */}
         {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
         <Routes>
           <Route path="/" exact element={<Home />} />
